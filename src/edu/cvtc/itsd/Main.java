@@ -289,6 +289,16 @@ public class Main {
     labelState.setForeground(Color.magenta);
     panelStatus.add(labelState);
 
+    //OK button for good screen
+    JButton buttonOk = new JButton("OK");
+    buttonOk.setAlignmentX(JComponent.CENTER_ALIGNMENT);
+    buttonOk.addActionListener(new ActionListener() {
+      public void actionPerformed(ActionEvent e) {
+        doneProcessing();
+      }
+    });
+    panelStatus.add(buttonOk);
+
     panelStatus.add(Box.createVerticalGlue());
 
     // Error panel ////////////////////////////////////////////////////////////
