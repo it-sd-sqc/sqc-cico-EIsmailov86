@@ -61,4 +61,15 @@ Use `./build.sh` to build CiCo and `./run.sh` to run it if using the command lin
 ## Expected results
 * Should display "Developer" for the user name.
 
+# Module 5: Add "OK" button
+
+## Test steps
+1. Build and run CiCo.
+2. Enter 000-000-00
+
+## Expected results
+ Program will display "OK" button
+3. Press "OK" button
+4. Program will exit to the main screen
+
 
