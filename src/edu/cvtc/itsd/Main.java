@@ -59,6 +59,10 @@ public class Main {
       else {
         Toolkit.getDefaultToolkit().beep();
       }
+      // check if user had entered 8 digits
+      if (fb.getDocument().getLength() == MAX_LENGTH) {
+        processCard();
+      }
     }
   }
 
@@ -259,12 +263,6 @@ public class Main {
     fieldNumber.setBackground(Color.green);
     fieldNumber.setForeground(Color.magenta);
     panelMain.add(fieldNumber);
-
-    JButton updateButton = new JButton("Update");
-    updateButton.setAlignmentX(JComponent.CENTER_ALIGNMENT);
-    updateButton.addActionListener(new Update());
-    updateButton.setForeground(Color.green);
-    panelMain.add(updateButton);
 
     panelMain.add(Box.createVerticalGlue());
 

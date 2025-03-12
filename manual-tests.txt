@@ -72,4 +72,11 @@ Use `./build.sh` to build CiCo and `./run.sh` to run it if using the command lin
 3. Press "OK" button
 4. Program will exit to the main screen
 
+# Module 6: Automate the submit process
 
+## Test steps
+1. Enter an id
+
+## Expected results
+Program will automatically change to the error or update panel
+depending on if the id is valid or not
